@@ -10,6 +10,7 @@ function changeImage() {
   drawImg(imgSrc);
 }
 
+//draws image on canvas
 function drawImg(imgSrc) {
   var c = document.getElementById("picCanvas");
   var ctx = c.getContext("2d");
