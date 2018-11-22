@@ -21,7 +21,7 @@ body {
 #picCanvas {
   position: absolute;
   left: 100px;
-  top: 150px;
+  top: 140px;
 }
 
 #playButton {
@@ -62,5 +62,5 @@ body {
   position: absolute;
   left: 570px;
   top:670px;
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
 }
