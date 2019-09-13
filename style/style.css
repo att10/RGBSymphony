@@ -14,7 +14,7 @@ body {
   top: 0px;
   width:350px;
   height:140px;
-  background-image: url("./images/Audiopainter.png");  
+  background-image: url("../images/Audiopainter.png");  
 }
 
 #picCanvas {
