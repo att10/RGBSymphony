@@ -9,7 +9,7 @@
 	<body onload="init('images/Untitled.png');">
     <div id="header"></div>
     <canvas id="picCanvas" width="1000px" height="500px"></canvas>
-    <img id="pic" src="images/Untitled.png" alt="Smiley Face" hidden="true">
+    <img id="pic" src="Untitled.png" alt="Smiley Face" hidden="true">
     <input type="button" id="playButton" value="PLAY" onclick="playSong();"></button>
     <input type="button" id="selectButton" value="USE IMAGE URL" onclick="changeImage();"/>
 	<input type="text" id="urlBox"/>

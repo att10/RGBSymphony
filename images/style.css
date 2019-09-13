@@ -1,0 +1,66 @@
+html {
+	height:100%;
+	width:100%;
+}
+
+body {
+	height:100%;
+	width:100%;
+}
+
+#header {
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  width:350px;
+  height:140px;
+  background-image: url("Audiopainter.png");
+  background-color: #000000;
+}
+
+#picCanvas {
+  position: absolute;
+  left: 100px;
+  top: 140px;
+}
+
+#playButton {
+  position: absolute;
+  left: 100px;
+  top: 710px;
+  width:140px;
+  height: 40px;
+  border: 0;
+  background-color: darkgrey;
+  color: white;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+#selectButton {
+  position: absolute;
+  left: 100px;
+  top: 660px;
+  width:140px;
+  height: 40px;
+  border: 0;
+  background-color: darkgrey;
+  color: white;
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+#urlBox {
+  position: absolute;
+  left: 250px;
+  top: 663px;
+  height: 30px;
+  font-size: 25px;
+}
+
+#note {
+  position: absolute;
+  left: 570px;
+  top:670px;
+  font-family: Arial, sans-serif;
+}
