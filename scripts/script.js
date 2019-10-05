@@ -1,25 +1,25 @@
-var data;
+let data;
 
 function init(imgSrc) {
   drawImg(imgSrc);
 }
 
 function changeImage() {
-  var url = document.getElementById("urlBox");
+  let url = document.getElementById("urlBox");
   imgSrc = url.value;
   drawImg(imgSrc);
 }
 
 //draws image on canvas
 function drawImg(imgSrc) {
-  var c = document.getElementById("picCanvas");
-  var ctx = c.getContext("2d");
-  var img = document.getElementById("pic");
+  let c = document.getElementById("picCanvas");
+  let ctx = c.getContext("2d");
+  let img = document.getElementById("pic");
   img.crossOrigin = "anonymous";
   img.src = imgSrc;
   img.onload = function() {
     ctx.drawImage(img, 0, 0, c.width, c.height);
-    var imageData = ctx.getImageData(0, 0, c.width, c.height);
+    let imageData = ctx.getImageData(0, 0, c.width, c.height);
     data = imageData.data;
   }
 }
@@ -41,8 +41,8 @@ function sepRGBA() {
 }
 
 function musicTime(pitch, octave, duration) {
-  var synth = new Tone.Synth().toMaster();
-  var total = 0;
+  let synth = new Tone.Synth().toMaster();
+  let total = 0;
   for(i=0;i<pitch.length;i++){
     synth.triggerAttackRelease(pitch[i]+octave[i], duration[i], total);
     total = total + duration[i];
@@ -50,8 +50,8 @@ function musicTime(pitch, octave, duration) {
 }
 
 function pitch(x) {
-  var y = x % 5;
-  var note;
+  let y = x % 5;
+  let note;
   switch(y) {
     case 0:
       note = "C";
@@ -77,8 +77,8 @@ function octave(x) {
 }
 
 function duration(x) {
-  var y = x % 7;
-  var dur;
+  let y = x % 7;
+  let dur;
   switch(y) {
     case 0:
       dur = 2; //whole
