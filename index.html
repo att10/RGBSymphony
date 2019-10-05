@@ -15,21 +15,27 @@
   <body onload="init('images/Untitled.png');">
     
     <div class="container">
+      <div class = "row justify-content-center">
+        <div id="header"></div>
+        <canvas id="picCanvas" width="800px" height="450px"></canvas>
+        <img id="pic" src="images/Untitled.png" alt="Smiley Face" hidden="true">
 
-      <div id="header"></div>
-      <canvas id="picCanvas" width="800px" height="450px"></canvas>
-      <img id="pic" src="images/Untitled.png" alt="Smiley Face" hidden="true">
-    
-      <div class="row-px-2 form-group">
-        <input type="button" class="btn btn-primary" id="playButton" value="Play" onclick="playSong();"></button>
-        <input type="button" class="btn btn-danger" id="stopButton" value="Stop"></button>
-        <input type="button" class="btn btn-secondary" id="selectButton" value="Use Image URL" onclick="changeImage();"/>
+        <div class = "row justify-content-center">
+          <div class="row-px-10 form-group">
+            <input type="button" class="btn btn-primary" id="playButton" value="Play" onclick="playSong();"></button>
+            <input type="button" class="btn btn-danger" id="stopButton" value="Stop"></button>
+          </div>
+          <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="URL Here" aria-label="URL Here" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="selectButton" onclick="changeImage();">Use Image URL</button>
+              </div>
+          </div>
+          <div class="row-px-10 form-inline">
+            <div id="note">&nbsp For best results, use i.imgur.com URLs</div>
+          </div> 
+        </div> 
       </div>
-      <div class="row-pt-2 form-inline">
-          <input type="text" class="input-group-text" id="urlBox">
-          <div id="note">&nbsp For best results, use i.imgur.com URLs</div>
-      </div>  
-      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
