@@ -45,7 +45,7 @@ function musicTime(pitch, octave, duration) {
   let total = 0;
   for(i=0;i<pitch.length;i++){
     synth.triggerAttackRelease(pitch[i]+octave[i], duration[i], total);
-    total = total + duration[i];
+    total += duration[i];
   }
 }
 
