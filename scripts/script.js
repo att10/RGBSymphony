@@ -17,7 +17,7 @@ function drawImg(imgSrc) {
   let img = document.getElementById("pic");
   img.crossOrigin = "anonymous";
   img.src = imgSrc;
-  img.onload = function() {
+  img.onload = () => {
     ctx.drawImage(img, 0, 0, c.width, c.height);
     let imageData = ctx.getImageData(0, 0, c.width, c.height);
     data = imageData.data;
