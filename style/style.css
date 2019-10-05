@@ -9,43 +9,7 @@ body {
 }
 
 #header {
-  position: absolute;
-  left: 100px;
-  top: 0px;
   width: 350px;
   height: 140px;
   background-image: url("../images/logo.png");
-}
-
-#picCanvas {
-  position: absolute;
-  left: 100px;
-  top: 140px;
-}
-
-#playButton {
-  position: absolute;
-  left: 100px;
-  top: 660px;
-}
-
-#selectButton {
-  position: absolute;
-  left: 170px;
-  top: 660px;
-}
-
-#urlBox {
-  position: absolute;
-  left: 320px;
-  top: 663px;
-  height: 30px;
-  font-size: 25px;
-}
-
-#note {
-  position: absolute;
-  left: 610px;
-  top: 665px;
-  font-family: Arial, sans-serif;
 }
