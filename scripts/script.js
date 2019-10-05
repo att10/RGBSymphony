@@ -17,7 +17,7 @@ function drawImg(imgSrc) {
   let img = document.getElementById("pic");
   img.crossOrigin = "anonymous";
   img.src = imgSrc;
-  img.onload = function() {
+  img.onload = () => {
     ctx.drawImage(img, 0, 0, c.width, c.height);
     let imageData = ctx.getImageData(0, 0, c.width, c.height);
     data = imageData.data;
@@ -45,7 +45,7 @@ function musicTime(pitch, octave, duration) {
   let total = 0;
   for(i=0;i<pitch.length;i++){
     synth.triggerAttackRelease(pitch[i]+octave[i], duration[i], total);
-    total = total + duration[i];
+    total += duration[i];
   }
 }
 
