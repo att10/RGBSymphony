@@ -26,11 +26,14 @@
             <input type="button" class="btn btn-danger" id="stopButton" value="Stop"></button>
           </div>
           <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="For best results, use i.imgur.com URLs" aria-label="URL Here" aria-describedby="basic-addon2">
+              <input type="text" class="form-control" placeholder="URL Here" aria-label="URL Here" aria-describedby="basic-addon2">
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button" id="selectButton" onclick="changeImage();">Use Image URL</button>
               </div>
           </div>
+          <div class="row-px-10 form-inline">
+            <div id="note">&nbsp For best results, use i.imgur.com URLs</div>
+          </div> 
         </div> 
       </div>
     </div>
